@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en"/>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="w3-theme-14">
+    <div style="min-width:400px">
+        <div class="w3-bar w3-large w3-theme-d4">          
+		<div class = "heading-1">Contacts Datastore</div>
+		<!--<div class = "link-bar-1" ><a href="view_contacts.html"> View Contacts </a></div> -->
+		<input class="link-bar-1" type="submit"
+                       value="View Contacts" onclick="retrieveAndDisplayContacts()"/>
+	   
+        </div>
+	
+
+        <div class="w3-container w3-content">
+	
+          <div class="search-container">
+		<input type="text" placeholder="Search by name.." name="search_name" id = "search_name">
+	        <button type="submit" onclick="retrieveAndDisplayContactsByName()"><i class="fa fa-search">Search</i></button>
+		<br></br>
+		<table class= "table-1" id = "contacts_table">
+		</table>
+	</div>
+	 
+  </div>
+
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

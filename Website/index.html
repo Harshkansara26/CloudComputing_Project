@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en"/>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="w3-theme-14">
+    <div style="min-width:400px">
+        <div class="w3-bar w3-large w3-theme-d4">          
+		<div class = "heading-1">Contacts Datastore</div>
+		<!--<div class = "link-bar-1" ><a href="view_contacts.html"> View Contacts </a></div> -->
+		<input class="link-bar-1" type="submit"
+                       value="View Contacts" onclick="retrieveAndDisplayContacts()"/>
+	   
+        </div>
+	
+
+        <div class="w3-container w3-content">
+	
+            <p class="heading-2">Upload a business card to process</p>
+            <input id="file" type="file" name="file" accept="image/*"/>
+            <input class="w3-button w3-blue-grey" type="submit" value="Upload"
+                   onclick="uploadAndExtract()"/>
+	   <div><br></div>
+	   <div class="main-elem">
+	    <div class="rectangle-12">
+		<!-- div to fll form and submit -->
+		<div id ="form_details" >
+			<div class="header-18 "> Fetched Details</div>
+			<p class = "paragraph-5">Change any values you want to change and click save button:</p>
+			<div style="width:80% padding-top:10px">
+				<fieldset>
+					<div class = "paragraph-39">
+					    <label for="name">Full Name:</label>
+					    <input id="name" type="text" name="name"/>
+					</div>
+					<p>
+					<div class = "paragraph-43">
+					    <label for="email">Email:</label>
+					    <input id="email" type="text" name="email"/>
+					</div></p>
+					<p>
+					<div class = "paragraph-43 ">
+					    <label for="phone">Phone:</label>
+					     <input id="phone" type="tel" name="phone"/>
+					</div></p>				
+					<p>
+					<div class = "paragraph-43 ">
+					    <label for="organization">Organization:</label>
+                            		    <input id="organization" type="text" name="organization"/>
+					</div></p>
+					<p>
+					<div class = "paragraph-43 ">
+					    <label for="address">Address:</label>
+					    <input class = "text-input-15" id="address" type="text" name="address"/>
+					</div></p><br></br>
+					<p>
+					
+						<input class="w3-button w3-blue-grey" type="submit" id="save"
+                           			value="Submit" onclick="saveContact()" disabled/>
+					</p>
+					    
+			    	</fieldset>
+			</div>
+			
+
+		</div>
+		<!-- div to display success message after saving -->
+		<div id="details_saved" style="display:none">
+			<form action = "/view_contacts.html" >
+				<div class = "header-20"> 
+				<span>&#x2705;</span>
+				<p>Details Saved Succesfully</p>
+				
+				<p><input class="button-4" type="submit" id="save"
+                           			value="Done"  /></p></div>
+			</form>
+			
+			
+		</div>
+	      
+	    </div>
+	    <div class="rectangle-13">
+		<p class = "header-19"> Card Uploaded</p>
+	       	
+		<div id="view" style="display: none;">
+            		<img id="image" width="380" height= "380"/>
+            	<hr>
+        </div>
+	     </div>
+  	 </div>
+        </div>
+       
+   
+
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
+

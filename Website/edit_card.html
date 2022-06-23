@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en"/>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="w3-theme-14">
+    <div style="min-width:400px">
+        <div class="w3-bar w3-large w3-theme-d4">          
+		<div class = "heading-1">Contacts Datastore</div>
+		<div class = "link-bar-1" ><a href="view_contacts.html"> View Contacts </a></div> 
+	   
+        </div>
+	
+
+        <div class="w3-container w3-content">
+	
+	   <div><br><br></div>
+	   <div class="main-elem" style="padding-left:50px">
+	    <div class="rectangle-14">
+		<!-- div to fll form and submit -->
+		<div class ="form_details" >
+			<div class="header-18 "> Edit Details</div>
+			<p class = "paragraph-5">Change any values you want to change and click save button:</p>
+			<div style="width:80% padding-top:10px">
+				<fieldset>
+					<div class = "paragraph-39">
+					    <label for="name">Full Name:</label>
+					    <input id="name" type="text" name="name"/>
+					</div>
+					<p>
+					<div class = "paragraph-43">
+					    <label for="name">Email:</label>
+					    <input id="name" type="text" name="name"/>
+					</div></p>
+					<p>
+					<div class = "paragraph-43 ">
+					    <label for="name">Phone:</label>
+					     <input id="phone" type="tel" name="phone"/>
+					</div></p>				
+					<p>
+					<div class = "paragraph-43 ">
+					    <label for="name">Website:</label>
+					    <input id="website" type="text" name="website"/>
+					</div></p>
+					<p>
+					<div class = "paragraph-43 ">
+					    <label for="name">Address:</label>
+					    <input class = "text-input-15" id="address" type="text" name="address"/>
+					</div></p><br></br>
+					<p>
+					
+						<button class= "button-9" type="button" onclick="saveContact()" >Submit</button>
+					</p>
+					    
+			    	</fieldset>
+			</div>
+			
+
+		</div>
+		
+	     </div>
+  	 </div>
+        </div>
+       
+   
+
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

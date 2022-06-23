@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en" />
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body class="w3-theme-14">
+    <div style="min-width:400px">
+        <div class="w3-bar w3-large w3-theme-d4">
+            <div class="heading-1">Contacts Datastore</div>
+            <div class="link-bar-1"><a href="view_contact.html"> View Contacts </a></div>
+
+        </div>
+
+
+        <div class="w3-container w3-content">
+
+            <div class="search-container">
+                <input type="text" placeholder="Search by name.." name="search">
+                <button type="submit" onclick="search()"><i class="fa fa-search">Search</i></button>
+                <br></br>
+
+                <table class="table-2">
+                    <tr>
+                        <th class="th1">Name</th>
+                        <th class="th1">Telephone Number</th>
+                        <th class="th1">Email</th>
+                        <th class="th1">Website</th>
+                        <th class="th1">Address</th>
+                        <th class="th1">Action</th>
+                    </tr>
+                    <tr id="row1">
+                        <td class="td1">Alfreds Futterkiste</td>
+                        <td class="td1">1234567589</td>
+                        <td class="td1">alfred243@gmail.com</td>
+                        <td class="td1">alfred24.ca</td>
+                        <td class="td1">41, North Bay, Scarborough</td>
+                        <td class="td1"><button type="button" onclick="deleteRow1()">Delete</button>/<button
+                                type="button" onclick="editRow()">Edit</button></td>
+                    </tr>
+                    <tr id="row2">
+                        <td class="td1">Centro comercial Moctezuma</td>
+                        <td class="td1">4712451633</td>
+                        <td class="td1">centro231@hotmail.com</td>
+                        <td class="td1">centro243.com</td>
+                        <td class="td1">11,Purple Dusk Trail,Eglington</td>
+                        <td class="td1"><button type="button" onclick="deleteRow2()">Delete</button>/<button
+                                type="button" onclick="editRow()">Edit</button></td>
+                    </tr>
+                    <tr id="row3">
+                        <td class="td1">Ernst Handel</td>
+                        <td class="td1">6452341224</td>
+                        <td class="td1">ernst2345@yahoo.com</td>
+                        <td class="td1">Roland.com</td>
+                        <td class="td1">312, Military Trail,Etobicoke</td>
+                        <td class="td1"><button type="button" onclick="deleteRow3()">Delete</button>/<button
+                                type="button" onclick="editRow()">Edit</button></td>
+                    </tr>
+                    <tr id="row4">
+                        <td class="td1">John Cyrus</td>
+                        <td class="td1">4712422263</td>
+                        <td class="td1">jcyrus47@hotmail.com</td>
+                        <td class="td1">johnbuilders.com</td>
+                        <td class="td1">10,Sandhurst Circle West,Scarborough</td>
+                        <td class="td1"><button type="button" onclick="deleteRow4()">Delete</button>/<button
+                                type="button" onclick="editRow()">Edit</button></td>
+                    </tr>
+                    <tr id="row5">
+                        <td class="td1">Kendra Eastmond</td>
+                        <td class="td1">4312445133</td>
+                        <td class="td1">kendra2321@gmail.com</td>
+                        <td class="td1">kendra.ca</td>
+                        <td class="td1">143, Drive way, Brampton</td>
+                        <td class="td1"><button type="button" onclick="deleteRow5()">Delete</button>/<button
+                                type="button" onclick="editRow()">Edit</button></td>
+                    </tr>
+                    <tr id="row6">
+                        <td class="td1">Maddy Scott</td>
+                        <td class="td1">6472342342</td>
+                        <td class="td1">maddyscott12@gmail.com</td>
+                        <td class="td1">scottmad.ca</td>
+                        <td class="td1">48, Riverside Dale, Missisauga</td>
+                        <td class="td1"><button type="button" onclick="deleteRow6()">Delete</button>/<button
+                                type="button" onclick="editRow()">Edit</button></td>
+                    </tr>
+                    <!--
+                    <tr>
+                         <td>Island Trading</td>
+                        <td>Helen Bennett</td>
+                        <td>UK</td>
+                    </tr>
+                    <tr>
+                        <td>Laughing Bacchus Winecellars</td>
+                        <td>Yoshi Tannamuri</td>
+                        <td>Canada</td>
+                    </tr>
+                    <tr>
+                        <td>Magazzini Alimentari Riuniti</td>
+                        <td>Giovanni Rovelli</td>
+                        <td>Italy</td>
+                    </tr>-->
+                </table>
+
+
+
+
+
+
+
+
+            </div>
+
+        </div>
+
+
+
+</body>
+
+</html>
+
+
+<!--
+<table class="table-1">
+    <tr class="td1">
+        <th class="th1">Name</th>
+        <th class="th1">Telephone Number</th>
+        <th class="th1">Email</th>
+        <th class="th1">Website</th>
+        <th class="th1">Address</th>
+        <th class="th1">Action</th>
+    </tr>
+
+    <tr class="td1">
+        <td class="td1">John</td>
+        <td class="td1">+1479867565</td>
+        <td class="td1">john@gmal.com</td>
+        <td class="td1">www.johnbuilders.com</td>
+        <td class="td1">5005 Steeles Avenue East, Toronto, Ontario, Canada</td>
+        <td class="td1">Delete</td>
+
+
+    </tr>
+
+</table>-->
